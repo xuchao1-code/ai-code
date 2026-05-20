@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-code"
+version = "0.1.0"
+description = "A basic Python application scaffold."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "ai-code maintainers" }
+]
+dependencies = []
+
+[project.scripts]
+ai-code = "ai_code.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
